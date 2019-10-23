@@ -129,23 +129,17 @@ h2::after {
   margin: 0;
 }
 
-.prodacts-list a {
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.prodacts-list a {
+.prodacts-list li {
   float: left;
   width: 254px;
   margin: 0 30px 30px 0;
 }
 
-.prodacts-list a:nth-child(4n) {
+.prodacts-list li:nth-child(4n) {
   margin-right: 0;
 }
 
-.prodacts-list a:nth-last-child(-n + 4) {
+.prodacts-list li:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }
 
@@ -157,6 +151,12 @@ h2::after {
 .prodacts li:hover .price,
 .prodacts li:focus .price {
   background-color: rgba(255, 255, 255, 0.439);
+}
+
+.prodacts-list a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .prodacts-list img {
