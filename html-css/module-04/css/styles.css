@@ -237,6 +237,7 @@ h2::after {
 
 .news-list a {
   display: block;
+  text-decoration: none;
   background-color: #4ec6ab;
   color: #ffffff;
   width: 160px;
