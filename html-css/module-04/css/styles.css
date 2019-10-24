@@ -249,7 +249,6 @@ h2::after {
   border: 0;
   padding: 12px 42px;
   margin: 0;
-  cursor: pointer;
 }
 
 .news-list a:hover,
