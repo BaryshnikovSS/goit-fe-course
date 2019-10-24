@@ -143,20 +143,20 @@ h2::after {
   margin-bottom: 0;
 }
 
-.prodacts li:hover .price-name,
-.prodacts li:focus .price-name {
-  background-color: #1abc9c;
-}
-
-.prodacts li:hover .price,
-.prodacts li:focus .price {
-  background-color: rgba(255, 255, 255, 0.439);
-}
-
 .prodacts-list a {
   display: block;
   text-decoration: none;
   color: #ffffff;
+}
+
+.prodacts a:hover .price-name,
+.prodacts a:focus .price-name {
+  background-color: #1abc9c;
+}
+
+.prodacts a:hover .price,
+.prodacts a:focus .price {
+  background-color: rgba(255, 255, 255, 0.439);
 }
 
 .prodacts-list img {
@@ -232,9 +232,11 @@ h2::after {
   font-weight: 400;
   letter-spacing: -0.28px;
   color: #555252;
+  margin-bottom: 12px;
 }
 
-.news-list .button {
+.news-list a {
+  display: block;
   background-color: #4ec6ab;
   color: #ffffff;
   width: 160px;
@@ -245,12 +247,12 @@ h2::after {
   letter-spacing: -0.32px;
   border-radius: 3px;
   border: 0;
-  padding: 0;
-  margin: 12px auto 0;
+  padding: 12px 42px;
+  margin: 0;
   cursor: pointer;
 }
 
-.news-list .button:hover,
-.news-list .button:focus {
+.news-list a:hover,
+.news-list a:focus {
   filter: brightness(1.2);
 }
