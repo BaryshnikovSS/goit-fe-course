@@ -1,0 +1,139 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+.nav-list {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #95e1d3;
+}
+
+/* MAIN */
+.aux-title {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* SERVICE SECTION */
+.services-list {
+  list-style: none;
+}
+
+.icon-title {
+  text-transform: uppercase;
+}
+
+.icon-text {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* TEAM SECTION */
+.table_of_contents {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.position {
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.Laaqiq {
+  color: #f38181;
+}
+
+.button {
+  background-color: #95e1d3;
+  border-style: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 150px;
+  height: 40px;
+}
