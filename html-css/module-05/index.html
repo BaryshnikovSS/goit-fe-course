@@ -28,138 +28,149 @@
           />
         </a>
         <ul class="header-nav-list">
-          <li class="header-nav-list-item"><a href="#">Home</a></li>
-          <li class="header-nav-list-item"><a href="#">About Us</a></li>
-          <li class="header-nav-list-item"><a href="#">Page</a></li>
-          <li class="header-nav-list-item shop-btn">
+          <li class="header-nav-list__item"><a href="#">Home</a></li>
+          <li class="header-nav-list__item"><a href="#">About Us</a></li>
+          <li class="header-nav-list__item"><a href="#">Page</a></li>
+          <li class="header-nav-list__item shop-submenu">
             <a href="#">Shop</a>
-            <ul class="header-nav-list-item submenu">
-              <li class="submenu-item"><a href="#">my submenu</a></li>
-              <li class="submenu-item"><a href="#">my submenu</a></li>
-              <li class="submenu-item"><a href="#">my submenu</a></li>
-              <li class="submenu-item"><a href="#">my submenu</a></li>
-              <li class="submenu-item"><a href="#">my submenu</a></li>
+            <ul class="header-nav-list__item__submenu">
+              <li class="submenu__item"><a href="#">my submenu</a></li>
+              <li class="submenu__item"><a href="#">my submenu</a></li>
+              <li class="submenu__item"><a href="#">my submenu</a></li>
+              <li class="submenu__item"><a href="#">my submenu</a></li>
+              <li class="submenu__item"><a href="#">my submenu</a></li>
             </ul>
           </li>
-          <li class="header-nav-list-item"><a href="#">Blog</a></li>
-          <li class="header-nav-list-item"><a href="#">Contact Us</a></li>
+          <li class="header-nav-list__item"><a href="#">Blog</a></li>
+          <li class="header-nav-list__item"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1 class="visually-hidden">MAIN CONTENT OUR SHOP</h1>
       <!-- CAROUSEL SECTION-SCROLLING -->
-      <div class="scroll">
-        <div class="scroll-section-background-img"></div>
-        <div class="scroll-section-background-color"></div>
-        <div class="scroll-section">
-          <section class="scroll-section-slider container">
+      <section class="slider-section">
+          <img class="slider-section__background" src="https://picua.org/images/2019/10/28/8ef68a5d471d33469e6f572e2be59d17.jpg" alt="backgroun-img">
+          <div class="slider-section__slider container clearfix">
             <button class="pe-7s-angle-left"></button>
-            <button class="pe-7s-angle-right"></button>
+            <button class="pe-7s-angle-right"></button>            
             <ul class="slider-list">
-              <li class="first-slide"></li>
-              <li class="second-slide active">
-                <p class="title-item">
-                  <span class="affordable">Affordable</span> Paris Tours
-                </p>
-                <p class="content-item">
-                  City Tour / Tour Tickets / Tour Guides
-                </p>
+              <!-- <li class="slider-list__first-slide"></li> -->
+              <li class="slider-list__second-slide active">
+                <h2 class="slider-list__second-slide__title-item">Affordable Paris Tours</h2>
+                <p class="slider-list__second-slide__content-item">City Tour / Tour Tickets / Tour Guides</p>
               </li>
-              <li class="third-slide"></li>
+              <!-- <li class="slider-list__third-slide"></li> -->
             </ul>
-          </section>
-        </div>
-      </div>
+          </div>
+      </section>
       <!-- GALERY PRODACTS SECTION -->
-      <section class="prodacts container">
-        <h2>New collection</h2>
+      <section class="prodacts ">
+        <div class="container">
+        <h3>New collection</h3>
         <ul class="prodacts-list clearfix">
           <li>
+              <img class="prodacts-list__content-item_img"
+               src="https://picua.org/images/2019/11/06/7c5e107ed977aa3080ba50bfef0b52c5.png"
+                alt="PRODUCTS"
+                width="204"
+                height="226"
+              />
+              <div class="prodacts-list__content-item__end-items clearfix">
+                <h4 class="prodacts-list__content-item__price-name"><a href="#">Blue Tshirt</a></h3>
+                <span class="prodacts-list__content-item__price">26</span>
+              </div>          
             <div class="overlay">
-              <div class="overlay-background"></div>
-              <div class="overlay-content">
-                <button class="like"></button>
-                <button class="mix"></button>
-                <button class="time"></button>
-                <button class="buy">Add to cart</button>
-              </div>
+                <div class="overlay__content">
+                  <button class="item"><span class="overlay__content__icon pe-7s-like"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-shuffle"></span>
+                  </button>
+                  <button class="item"><span class="overlay__content__icon pe-7s-clock"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-cart"></span>
+                    <span class="Add-to-cart">Add to cart</span>
+                  </button>
+                </div>
             </div>
-            <img
-              src="https://picua.org/images/2019/10/28/8842e02b253afde905087eabd93013f9.png"
-              alt="PRODUCTS"
-              width="255"
-              height="322"
-            />
-            <a href="#">
-              <p class="price">26</p>
-              <p class="price-name">Blue Tshirt</p>
-            </a>
           </li>
           <li>
+              <img class="prodacts-list__content-item_img"
+               src="https://picua.org/images/2019/11/06/f6018251f91e49af4aa75d5b680b3c4c.png"
+                alt="PRODUCTS"
+                width="204"
+                height="226"
+              />
+              <div class="prodacts-list__content-item__end-items clearfix">
+                <h4 class="prodacts-list__content-item__price-name"><a href="#">Woman Shirt</a></h3>
+                <span class="prodacts-list__content-item__price">31</span>
+              </div>          
             <div class="overlay">
-              <div class="overlay-background"></div>
-              <div class="overlay-content">
-                <button class="like"></button>
-                <button class="mix"></button>
-                <button class="time"></button>
-                <button class="buy">Add to cart</button>
-              </div>
+                <div class="overlay__content">
+                  <button class="item"><span class="overlay__content__icon pe-7s-like"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-shuffle"></span>
+                  </button>
+                  <button class="item"><span class="overlay__content__icon pe-7s-clock"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-cart"></span>
+                    <span class="Add-to-cart">Add to cart</span>
+                  </button>
+                </div>
             </div>
-            <img
-              src="https://picua.org/images/2019/10/28/d0d1742c89b9136936952cc9efbaec29.png"
-              alt="PRODUCTS"
-              width="255"
-              height="322"
-            />
-            <a href="#">
-              <p class="price">31</p>
-              <p class="price-name">Woman shirt</p>
-            </a>
           </li>
           <li>
+              <img class="prodacts-list__content-item_img"
+               src="https://picua.org/images/2019/11/06/1d1fd959d3f40f8121f52a34db936c2e.png"
+                alt="PRODUCTS"
+                width="204"
+                height="226"
+              />
+              <div class="prodacts-list__content-item__end-items clearfix">
+                <h4 class="prodacts-list__content-item__price-name"><a href="#">Yellow Tshirt</a></h3>
+                <span class="prodacts-list__content-item__price">21</span>
+              </div>          
             <div class="overlay">
-              <div class="overlay-background"></div>
-              <div class="overlay-content">
-                <button class="like"></button>
-                <button class="mix"></button>
-                <button class="time"></button>
-                <button class="buy">Add to cart</button>
-              </div>
+                <div class="overlay__content">
+                  <button class="item"><span class="overlay__content__icon pe-7s-like"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-shuffle"></span>
+                  </button>
+                  <button class="item"><span class="overlay__content__icon pe-7s-clock"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-cart"></span>
+                    <span class="Add-to-cart">Add to cart</span>
+                  </button>
+                </div>
             </div>
-            <img
-              src="https://picua.org/images/2019/10/28/b3f3cf50e4fb81c9d3a0663b232cc854.png"
-              alt="PRODUCTS"
-              width="255"
-              height="322"
-            />
-            <a href="#">
-              <p class="price">21</p>
-              <p class="price-name">Yellow Tshirt</p>
-            </a>
           </li>
           <li>
+              <img class="prodacts-list__content-item_img"
+               src="https://picua.org/images/2019/11/06/5a0b2a06aac5988d703ccd2e3f911f2a.png"
+                alt="PRODUCTS"
+                width="204"
+                height="226"
+              />
+              <div class="prodacts-list__content-item__end-items clearfix">
+                <h4 class="prodacts-list__content-item__price-name"><a href="#">Cool Lingerie</a></h3>
+                <span class="prodacts-list__content-item__price">56</span>
+              </div>          
             <div class="overlay">
-              <div class="overlay-background"></div>
-              <div class="overlay-content">
-                <button class="like"></button>
-                <button class="mix"></button>
-                <button class="time"></button>
-                <button class="buy">Add to cart</button>
-              </div>
+                <div class="overlay__content">
+                  <button class="item"><span class="overlay__content__icon pe-7s-like"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-shuffle"></span>
+                  </button>
+                  <button class="item"><span class="overlay__content__icon pe-7s-clock"></span></button>
+                  <button class="item">
+                    <span class="overlay__content__icon pe-7s-cart"></span>
+                    <span class="Add-to-cart">Add to cart</span>
+                  </button>
+                </div>
             </div>
-            <img
-              src="https://picua.org/images/2019/10/28/2f4b84c30f739f39e0758a42a5285f85.png"
-              alt="PRODUCTS"
-              width="255"
-              height="322"
-            />
-            <a href="#">
-              <p class="price">56</p>
-              <p class="price-name">Cool Lingerie</p>
-            </a>
           </li>
         </ul>
+      </div>
       </section>
       <footer>
         <section class="footer">
