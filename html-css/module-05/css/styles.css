@@ -164,13 +164,14 @@ main {
   width: 104px;
   height: 104px;
   font-size: 100px;
+  opacity: 0.651;
   cursor: pointer;
   z-index: 1000;
 }
 
 .slider-section button:hover,
 .slider-section button:focus {
-  opacity: 0.651;
+  opacity: 1;
 }
 
 .slider-section .pe-7s-angle-left {
