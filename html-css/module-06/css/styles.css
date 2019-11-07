@@ -17,10 +17,13 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 .clearfix::after {
@@ -34,43 +37,61 @@ html {
   margin: 0 auto;
 }
 
+button {
+  border: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0;
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
-p {
-  margin: 0;
+li {
+  list-style: none;
 }
 
 body {
-  color: #333333;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.2;
+  
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
 
 /* HEADER */
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: ;
+  padding-top: 28px;
+  margin-bottom: 113px;
+}
+
 .nav-list {
   text-transform: uppercase;
   list-style: none;
+  width: 490px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .nav-list a {
   color: #95e1d3;
 }
+
+ .nav-list li::after {
+   width: 60px;
+   height: 4px;
+   margin-top: 42px;
+}
+
+.nav-list a:hover {}
+
+
 
 /* MAIN */
 .aux-title {
