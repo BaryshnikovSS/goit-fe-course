@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Wisdom Script Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/wisdom_script/WisdomScriptAJ.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-style: normal;
+  src: url(../fonts/montserrat/Montserrat-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/montserrat/Montserrat-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/droidserif/droidserifitalic.woff2) format("woff2"),
+    url(../fonts/droidserif/droidserifbolditalic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/robotoslab/robotoslabregular.woff2) format("woff2"),
+    url(../fonts/robotoslab/robotoslabregular.woff) format("woff");
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+button {
+  border: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #222222;
+}
+
+li {
+  list-style: none;
+}
+
+.page {
+  padding-bottom: 116px;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #777777;
+}
+
+.main-title {
+  color: #222222;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.875;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 4.625rem;
+}
+
+.main-sub-title {
+  display: block;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* HEADER */
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 0 10px;
+}
+
+.golden {
+  font-family: "Wisdom Script Regular";
+  font-size: 26px;
+  font-weight: 400;
+  color: #fed136;
+  line-height: 1.577;
+  letter-spacing: 0.05em;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  padding-top: 8px;
+}
+
+.nav-list__item {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 2.929;
+  text-transform: uppercase;
+}
+
+.nav-list__item a:hover {
+  color: #fed136;
+}
+
+/* SERVICES */
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list__item {
+  text-align: center;
+}
+
+.services-list__item:not(:last-child) {
+  margin-right: 2.25rem;
+}
+
+.services-list__item::before {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 74px;
+  height: 74px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  content: "";
+}
+
+.services-list__item:nth-child(1)::before {
+  background-image: url(../img/services-icon/svg/Icon-Basket.svg);
+  content: "";
+}
+
+.services-list__item:nth-child(2)::before {
+  background-image: url(../img/services-icon/svg/Icon-Laptop.svg);
+  content: "";
+}
+
+.services-list__item:nth-child(3)::before {
+  background-image: url(../img/services-icon/svg/Icon-Locked.svg);
+  content: "";
+}
+
+.services-list__title {
+  color: #222222;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 2.5;
+}
+
+.services-list__paragraph {
+  font-family: "Roboto Slab";
+  font-size: 0.875rem;
+  letter-spacing: -0.025em;
+  line-height: 1.6;
+}
+
+/* CONTACT US */
+.main-footer {
+  background-color: #222222;
+  background-image: url(../img/map_image.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+}
+
+/* MAIN-FOTER-FORM */
+.main-footer-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.main-footer-form__container {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 28px;
+}
+
+.main-footer-form__container input {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  text-transform: uppercase;
+  /* color: #bbbbbb; */
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.011px;
+  text-indent: 20px;
+  outline-offset: 0;
+  outline: none;
+  width: 458px;
+  height: 54px;
+}
+
+.main-footer-form__container input:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.main-footer-form__subject:focus {
+  color: #000000;
+}
+
+.main-footer-form__name[required]:focus:valid,
+.main-footer-form__email[required]:focus:valid,
+.main-footer-form__textarea[required]:focus:valid {
+  border-color: #008000;
+  color: #000000;
+}
+
+.main-footer-form__name[required]:focus:invalid,
+.main-footer-form__email[required]:focus:invalid,
+.main-footer-form__textarea[required]:focus:invalid {
+  border-color: #ff0000;
+  color: #000000;
+}
+
+.main-footer-form__textarea {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.011px;
+  resize: none;
+  width: 460px;
+  padding: 20px 20px;
+  margin-bottom: 28px;
+}
+
+.main-footer-form__container input::placeholder,
+.main-footer-form__textarea::placeholder {
+  color: #bbbbbb;
+}
+
+.main-footer-form__btn-send {
+  display: block;
+  color: #ffffff;
+  background-color: #fed136;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  width: 15rem;
+  height: 4.125rem;
+  margin: 0 auto;
+}
