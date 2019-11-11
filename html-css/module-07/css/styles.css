@@ -223,7 +223,7 @@ body {
 /* CONTACT US */
 .main-footer {
   background-color: #222222;
-  background-image: url(../img/map_image.svg);
+  background-image: url(../img/map_image.png);
   background-position: right;
   background-repeat: no-repeat;
   height: 100%;
@@ -250,7 +250,6 @@ body {
   border: 1px solid #cccccc;
   border-radius: 2px;
   text-transform: uppercase;
-  /* color: #bbbbbb; */
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
