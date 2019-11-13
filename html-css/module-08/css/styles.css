@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Robotolight.woff2") format("woff2"),
+    url("../fonts/Roboto/Robotolight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.first-logo a,
+.second-logo a {
+  color: #ffffff;
+}
+
+/* MOBILE */
+/* HEADER */
+.hdr-sctn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+
+.first-logo {
+  display: none;
+}
+
+.log {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 0.875rem;
+  padding-right: 1.25rem;
+}
+
+.sign {
+  color: #ffffff;
+  font-size: 0.875rem;
+  border: 2px solid #ffffff;
+  border-radius: calc(2.25rem / 2);
+  width: 5.625rem;
+  height: 2.25rem;
+  background-color: #00000000;
+}
+
+/* MAIN-SECTION */
+.main-sctn__div {
+  color: #ffffff;
+  background-color: #1a1915;
+  background-image: url(https://picua.org/images/2019/11/12/41cbd2089177ecdbaa4d5c0cb976d492.png);
+  /* background-image: url(../img/bakground/mobile/VectorSmartObject_\(320X540\).png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 10.875rem 0 9.25rem;
+}
+
+.second-logo {
+  margin-bottom: 2.25rem;
+}
+
+.main-title {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.sub-title {
+  display: block;
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-transform: none;
+  padding: 0.875rem 3.125rem;
+}
+
+.main-sctn-btn,
+.prtnr-sctn-btn {
+  background-color: #ff4e50;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  width: 17.5rem;
+  height: 2.5rem;
+  padding: 0.75rem 0;
+  padding: calc((2.5rem - 0.875rem * 1.2) / 2);
+  margin: 0 auto;
+}
+
+/* PARTNER-SECTION */
+.prtnr-sctn {
+  color: #333333;
+  text-align: center;
+  padding: 4.25rem 0;
+}
+
+.prtnr-sctn-title {
+  font-size: 1.375rem;
+  margin-bottom: 1.125rem;
+}
+
+.prtnr-sctn-list {
+  margin-bottom: 2.625rem;
+}
+
+.prtnr-sctn-list__item:not(:last-child) {
+  margin-bottom: 1.625rem;
+}
+
+.prtnr-sctn-list__item-img-cntnr {
+  display: inline-block;
+  position: relative;
+}
+
+.prtnr-sctn-list__item-img-cntnr::before {
+  position: absolute;
+  right: -0.25rem;
+  top: 5.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  content: "";
+}
+
+.prtnr-sctn-list__item:nth-of-type(1) .prtnr-sctn-list__item-img-cntnr::before {
+  background-image: url(../img/icons/svg/TV.svg);
+  background-color: #ff4e50;
+  content: "";
+}
+
+.prtnr-sctn-list__item:nth-of-type(2) .prtnr-sctn-list__item-img-cntnr::before {
+  background-image: url(../img/icons/svg/FLASK.svg);
+  background-color: #ffa507;
+  content: "";
+}
+
+.prtnr-sctn-list__item:nth-of-type(3) .prtnr-sctn-list__item-img-cntnr::before {
+  background-image: url(../img/icons/svg/CAP.svg);
+  background-color: #1cd7ad;
+  content: "";
+}
+
+.prtnr-sctn-list__item:nth-of-type(4) .prtnr-sctn-list__item-img-cntnr::before {
+  background-image: url(../img/icons/svg/PAPER-PLANE.svg);
+  background-color: #4e73db;
+  content: "";
+}
+
+.prtnr-sctn-list__item-img {
+  margin: 0 auto;
+}
+
+.prtnr-sctn-list__item-title {
+  font-size: 0.875rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0.875rem;
+}
+
+.prtnr-sctn-list__item-sub-title {
+  color: #666666;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-weight: 300;
+  padding: 0 3.125rem;
+}
+
+.prtnr-sctn-btn {
+  background-color: #00000000;
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  padding-top: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 48rem;
+  }
+
+  /* TABLET (min-width: 768px) */
+  /* HEADER (min-width: 768px) */
+  .hdr-sctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.125rem;
+  }
+
+  .first-logo {
+    display: inline-block;
+  }
+
+  .second-logo {
+    display: none;
+  }
+
+  /* MAIN-SECTION (min-width: 768px) */
+  .main-sctn__div {
+    background-image: url(https://picua.org/images/2019/11/12/4fd965cfb3ecbfc5f200f742a0e37238.png);
+    padding: 14.375rem 0 15.25rem;
+  }
+
+  .main-title {
+    font-size: 3.25rem;
+    padding: 0 5rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .main-sctn-btn {
+    width: 14.125rem;
+  }
+
+  /* PARTNER-SECTION (min-width: 768px) */
+  .prtnr-sctn {
+    padding: 4.375rem 0 3.125rem;
+  }
+
+  .prtnr-sctn-title {
+    margin-bottom: 1.875rem;
+  }
+
+  .prtnr-sctn-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 8.5rem;
+  }
+
+  .prtnr-sctn-list__item {
+    width: 14.75rem;
+  }
+
+  .prtnr-sctn-list__item:nth-of-type(2n) {
+    margin-bottom: 0;
+  }
+
+  .prtnr-sctn-list__item:nth-of-type(2) {
+    order: 1;
+  }
+
+  .prtnr-sctn-list__item:nth-of-type(4) {
+    order: 1;
+  }
+
+  .prtnr-sctn-list__item-sub-title {
+    width: 13.5rem;
+    padding: 0;
+  }
+
+  .prtnr-sctn-btn {
+    width: 192px;
+  }
+}
+
+@media (min-width: 942px) {
+  /* DESCTOP (min-width: 942px) */
+  /* HEADER (min-width: 942px) */
+  .container {
+    width: 58.875rem;
+  }
+
+  .hdr-sctn {
+    padding: 0;
+  }
+
+  .hdr-sctn-btn {
+    padding: 3.125rem 0;
+  }
+
+  /* MAIN-SECTION (min-width: 942px) */
+  .main-sctn {
+    background-color: #1a1915;
+    background-image: url(https://picua.org/images/2019/11/12/40c3af1d7fbafb193fe5dda8b8249bc9.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-sctn__div {
+    background-image: none;
+    background-color: #00000000;
+  }
+
+  .main-title {
+    padding: 0 13.125rem;
+  }
+
+  /* PARTNER-SECTION (min-width: 942px) */
+  .prtnr-sctn-list {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .prtnr-sctn-list__item:nth-of-type(n + 1) {
+    margin: 0;
+  }
+}
