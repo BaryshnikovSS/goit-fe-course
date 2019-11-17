@@ -49,21 +49,21 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
@@ -154,8 +154,8 @@ h3 {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .header__nav {
@@ -163,11 +163,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 26px 0 74px;
 }
 
@@ -183,11 +183,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   text-transform: uppercase;
   list-style: none;
   width: 620px;
@@ -230,7 +230,13 @@ h3 {
 /* MAIN */
 /* WELCOME-SECTION */
 .welcome-sctn {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f38181e6), to(#fce38ae6)),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f38181e6),
+      to(#fce38ae6)
+    ),
     url("https://picua.org/images/2019/11/17/793718764cea9bcc29c35aa6225093ae.jpg");
   background-image: -o-linear-gradient(#f38181e6, #fce38ae6),
     url("https://picua.org/images/2019/11/17/793718764cea9bcc29c35aa6225093ae.jpg");
@@ -272,13 +278,21 @@ h3 {
   height: 40px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
-  .welcome {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))),
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+  .welcome-sctn {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f38181e6),
+        to(#fce38ae6)
+      ),
       url("https://picua.org/images/2019/11/17/cb95f59cbf69b71a049f2bd777524c7c.jpg");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    background-image: -o-linear-gradient(#f38181e6, #fce38ae6),
       url("https://picua.org/images/2019/11/17/cb95f59cbf69b71a049f2bd777524c7c.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    background-image: linear-gradient(#f38181e6, #fce38ae6),
       url("https://picua.org/images/2019/11/17/cb95f59cbf69b71a049f2bd777524c7c.jpg");
   }
 }
@@ -295,10 +309,10 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .services-sctn__list-item {
@@ -307,8 +321,8 @@ h3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 384px;
   padding-left: 84px;
   position: relative;
@@ -378,8 +392,8 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -410,18 +424,24 @@ h3 {
 .team-sctn__overlay-list {
   position: absolute;
   top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fce38ae6), to(#f38181e6));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fce38ae6),
+    to(#f38181e6)
+  );
   background-image: -o-linear-gradient(bottom, #fce38ae6, #f38181e6);
   background-image: linear-gradient(to top, #fce38ae6, #f38181e6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   font-size: 0;
@@ -465,13 +485,13 @@ h3 {
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
   -webkit-box-shadow: 10px 10px #95e1d3;
-          box-shadow: 10px 10px #95e1d3;
+  box-shadow: 10px 10px #95e1d3;
 }
 
 .team-sctn__list-employee-img:hover .team-sctn__overlay-list {
@@ -479,8 +499,8 @@ h3 {
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition: rotate(180deg);
   -o-transition: rotate(180deg);
   transition: rotate(180deg);
@@ -493,11 +513,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
@@ -542,11 +562,11 @@ h3 {
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   -webkit-box-shadow: 0 0 3px #4add87;
-          box-shadow: 0 0 3px #4add87;
+  box-shadow: 0 0 3px #4add87;
 }
