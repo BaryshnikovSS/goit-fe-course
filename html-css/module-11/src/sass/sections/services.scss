@@ -16,9 +16,9 @@
     @extend %main-sub-title;
   }
 
-  & h3 {
-    @extend %services-title;
-  }
+  // &__list-item-title {
+  //   @extend %services-title;
+  // }
 }
 
 .services-sctn {
@@ -78,6 +78,7 @@
 
   &__list-item-title {
     margin-bottom: 14px;
+    @extend %services-title;
   }
 
   &__list-item-text {

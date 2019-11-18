@@ -48,6 +48,10 @@
     margin-bottom: 30px;
   }
 
+  &__list-employee-link {
+    @extend %services-title;
+  }
+
   &__list-employee-name {
     text-transform: uppercase;
     margin-bottom: 10px;
