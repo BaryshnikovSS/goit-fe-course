@@ -1,0 +1,45 @@
+.welcome-sctn {
+  background-image: linear-gradient($end__gradient, $first_gradient),
+    url("https://picua.org/images/2019/11/17/793718764cea9bcc29c35aa6225093ae.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: $alt_color;
+  text-align: center;
+  padding: 236px 0 230px;
+
+  &__sub-title {
+    font-size: 72px;
+    font-family: $sub-title-font;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-family: $title-font;
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    padding: 0 180px;
+    margin-bottom: 124px;
+  }
+
+  &__btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid $alt_color;
+    font-family: $title-font;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $alt_color;
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .welcome-sctn {
+    background-image: linear-gradient($end__gradient, $first_gradient),
+      url("https://picua.org/images/2019/11/17/cb95f59cbf69b71a049f2bd777524c7c.jpg");
+  }
+}

@@ -1,0 +1,126 @@
+.section__main-title {
+  @extend %main-title;
+
+  &::after {
+    display: block;
+    background-color: $main-title-after;
+    width: 60px;
+    height: 4px;
+    margin: 42px auto 0;
+    content: "";
+  }
+}
+
+.section__sub-title {
+  @extend %main-sub-title;
+}
+
+.team__table-of-contents {
+  @extend %main-style-text;
+}
+
+.team-sctn {
+  padding: 48px 0 78px;
+
+  &__table-of-contents {
+    width: 958px;
+    text-align: center;
+    margin: 0 auto 88px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__list-employee {
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+      margin: 0;
+    }
+
+  }
+
+  &__list-employee-img {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__list-employee-name {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__list-employee-position {
+    font-style: italic;
+    line-height: 1.6;
+  }
+}
+
+
+/* OVERLAY */
+.team-sctn {
+
+  &__overlay-list {
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to top, $end__gradient, $first_gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    opacity: 0;
+  }
+
+  &__overlay-list-item {
+    background-color: $background-icon-color_and_nav-hover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+
+    &:not(:last-child) {
+      margin-right: 2px;
+    }
+
+    &:nth-child(1) {
+      background-image: url(../images/icons/social_icon/svg/facebook.svg);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../images/icons/social_icon/svg/twitter.svg);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/icons/social_icon/svg/pinterest.svg);
+    }
+
+    &:nth-child(4) {
+      background-image: url(../images/icons/social_icon/svg/instagram.svg);
+    }
+
+    &:hover {
+      background-color: $background;
+    }
+  }
+
+  &__list-employee-img {
+    &:hover {
+      transition-property: all;
+      transition-duration: 0.2s;
+      transform: translate(-10px, -10px);
+      box-shadow: 10px 10px $background;
+    }
+  }
+
+  &__list-employee-img:hover .team-sctn__overlay-list {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition: rotate(180deg);
+    opacity: 1;
+  }
+}
