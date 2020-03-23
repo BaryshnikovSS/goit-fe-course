@@ -1,0 +1,39 @@
+.item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px mediumslateblue;
+    border-radius: 8px;
+    width: 400px;
+    padding: 0 20px;
+    height: 100px;
+
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.statusOn,
+.statusOff {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.statusOn {
+    background-color: green;
+}
+
+.statusOff {
+    background-color: red;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+}

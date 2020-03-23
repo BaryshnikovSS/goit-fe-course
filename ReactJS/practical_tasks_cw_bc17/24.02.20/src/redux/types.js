@@ -1,0 +1,5 @@
+export default {
+  ADD_TASKS: "ADD_TASKS",
+  DELETE_TASKS: "DELETE_TASKS",
+  EDIT_TASKS: "EDIT_TASKS"
+};
