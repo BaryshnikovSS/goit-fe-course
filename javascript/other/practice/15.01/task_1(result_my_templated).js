@@ -9,7 +9,7 @@ const getFetch = async () => {
     } catch (error) {
         console.error(error);
     }
-};
+}; 
 
 const listElem = document.getElementById('main_list');
 
