@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15.01</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js" asinc></script>
+</head>
+
+<body>
+
+    <ul id="main_list"></ul>
+
+    <!-- ---------------------------------------------------------------------------- -->
+
+    <!-- <div style="display:none">
+        <li id="main_list_elem">
+            {{#each users}} <h2>{{name}}</h2>
+            <p>address:</p>
+            <ul class="list">
+                <li class="list_item">street: {{address.street}}</li>
+                <li class="list_item">suite: {{address.suite}}</li>
+                <li class="list_item">city: {{address.city}}</li>
+                <li class="list_item">zipcode: {{address.zipcode}}</li>
+            </ul>
+            {{/each}}
+        </li>
+    </div>
+    ​
+    <script>
+        'use strict';
+
+        const listElem = document.getElementById('main_list');
+        const templateString = document.getElementById('main_list_elem').innerHTML;
+        const template = Handlebars.compile(tString);
+        const getUsers = async () => {
+            const users = await fetch('https://jsonplaceholder.typicode.com/users').then(resp => resp.json());
+            const usersName = users.map(elem => {
+                return {
+                    name: elem.name,
+                    address: elem.address
+                }
+            });
+            return usersName;
+        };
+        getUsers().then(users => {
+            // console.log(JSON.stringify({users}));
+            listElem.innerHTML = template({
+                users
+            });
+        });
+    </script> -->
+
+    <!-- ---------------------------------------------------------------------------- -->
+
+    <script type="module" src="./task_1(result_my_templated).js"></script>
+    <script type="module" src="./task_2(getElemById).js"></script>
+
+</body>
+
+</html>

@@ -1,8 +1,6 @@
-'use strict';
+// function task_07()
 
-function task_07()
-
-{
+// {
 
 // Напиши скрипт управления личным кабинетом интернет банка. 
 // Есть объект account в котором необходимо реализовать методы для работы 
@@ -14,12 +12,9 @@ function task_07()
  * Типов транзацкий всего два.
  * Можно положить либо снять деньги со счета.
  */
-
 const Transaction = {
-
   DEPOSIT: 'deposit',
   WITHDRAW: 'withdraw',
-
 };
 
 
@@ -32,6 +27,7 @@ const account = {
 
   // Текущий баланс счета
   balance: 0,
+
 
   // История транзакций
   transactions: [],
@@ -46,11 +42,11 @@ const account = {
   createTransaction(amount, type) {
 
     return {
-      id: this.transactions.length,
+      id: transactions.length + 1,
       amount,
       type,
     };
-
+  
   },
 
 
@@ -63,11 +59,9 @@ const account = {
    */
 
   deposit(amount) {
-
-    this.balance += amount;
+    this.balance + -amount;
     const currentTransaction = this.createTransaction(amount, Transaction.DEPOSIT);
-    this.transactions.push(currentTransaction);
-
+    this.Transaction.push(currentTransaction);
   },
 
 
@@ -84,17 +78,15 @@ const account = {
 
   withdraw(amount) {
 
-    if (this.balance >= amount) {
+    if (this.balance <= amount) {
 
-      this.balance -= amount;
+      this.balance + -amount;
       const currentTransaction = this.createTransaction(amount, Transaction.WITHDRAW);
-      this.transactions.push(currentTransaction);
+      this.Transaction.push(currentTransaction);
 
-    } else {
+    } else
 
-      console.log(`Сумы на Вашем счету:${this.balance}. Вам не хватает ${amount - this.balance} монет!`);
-
-    }
+    console.log('Тебе не хватает', amount - this.balance);
 
   },
 
@@ -107,7 +99,7 @@ const account = {
   getBalance() {
 
     return this.balance;
-
+  
   },
 
 
@@ -118,12 +110,14 @@ const account = {
 
   getTransactionDetails(id) {
 
-    return id < this.transactions.length ? this.transactions[id] : `Транзакции с id:${id} не существует!`;
+    return id < this.transactions.length ? this.transactions[id] : `Транзакци ${id} не существует!`
+
+    // return this.transactions[id];
 
   },
 
 
-
+  
   /*
    * Метод возвращает количество средств
    * определенного типа транзакции из всей истории транзакций
@@ -143,20 +137,18 @@ const account = {
 
     }
 
-    return total
+    return total;
 
   },
 
 };
 
-
-
 account.deposit(1000);
 account.deposit(500);
-account.withdraw(2500);
+account.withdraw(100);
 
-console.log(account.getTransactionDetails(1));
-console.log(account.getTransactionTotal(Transaction.DEPOSIT));
-console.log(account.getBalance());
+console.log(accaunt.getTransactionDetails(0));
+console.log(accaunt.getTransactionTotal(transactions.deposit));
+console.log(accaunt.getBalance());
 
-}
+// }
